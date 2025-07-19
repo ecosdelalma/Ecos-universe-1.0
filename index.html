@@ -8,26 +8,27 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="video-container">
+  <div class="video-background">
     <video autoplay muted loop id="bg-video">
       <source src="background.mp4" type="video/mp4" />
     </video>
-    <div class="overlay">
-      <h1 class="ecos-title">ecos</h1>
-      <button id="be-ecos-btn">be ecos</button>
-    </div>
   </div>
+
+  <div class="overlay-content">
+    <h1 class="ecos-title">ecos</h1>
+    <button id="be-ecos-btn">be ecos</button>
+  </div>
+
   <div id="form-container" class="hidden">
-    <div class="form-box">
-      <h2>Queremos escucharte</h2>
-      <form>
-        <input type="text" placeholder="¿Quién eres?" required />
-        <input type="email" placeholder="Correo electrónico" required />
-        <textarea placeholder="¿Por qué deseas entrar a Ecos Universe?" required></textarea>
-        <button type="submit">Enviar mi eco</button>
-      </form>
-    </div>
+    <form class="signup-form">
+      <h2>Bienvenido a Ecos Universe</h2>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea placeholder="¿Por qué quieres unirte a Ecos?"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
