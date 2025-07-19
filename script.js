@@ -1,4 +1,6 @@
-
-document.getElementById("be-ecos-btn").addEventListener("click", function() {
-  document.getElementById("form-container").classList.remove("hidden");
-});
+function showForm() {
+  document.getElementById('overlay').classList.add('hidden');
+  setTimeout(() => {
+    document.getElementById('formContainer').classList.remove('hidden');
+  }, 1000);
+}

@@ -1,34 +1,32 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ecos Universe</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="video-background">
+  <div class="background">
     <video autoplay muted loop id="bg-video">
-      <source src="background.mp4" type="video/mp4" />
+      <source src="fondo.mp4" type="video/mp4" />
+      Tu navegador no soporta video HTML5.
     </video>
   </div>
-
-  <div class="overlay-content">
-    <h1 class="ecos-title">ecos</h1>
-    <button id="be-ecos-btn">be ecos</button>
+  <div class="overlay" id="overlay">
+    <h1 class="logo">ecos</h1>
+    <button class="be-ecos-button" onclick="showForm()">be ecos</button>
   </div>
-
-  <div id="form-container" class="hidden">
-    <form class="signup-form">
+  <div class="form-container hidden" id="formContainer">
+    <form>
       <h2>Bienvenido a Ecos Universe</h2>
       <input type="text" placeholder="Tu nombre" required />
       <input type="email" placeholder="Correo electrónico" required />
-      <textarea placeholder="¿Por qué quieres unirte a Ecos?"></textarea>
+      <textarea placeholder="¿Por qué quieres unirte a Ecos?" required></textarea>
       <button type="submit">Enviar</button>
     </form>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
