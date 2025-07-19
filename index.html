@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ecos Universe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop id="bg-video">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay">
+      <h1 class="ecos-title">ecos</h1>
+      <button id="be-ecos-btn">be ecos</button>
+    </div>
+  </div>
+  <div id="form-container" class="hidden">
+    <div class="form-box">
+      <h2>Queremos escucharte</h2>
+      <form>
+        <input type="text" placeholder="¿Quién eres?" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="¿Por qué deseas entrar a Ecos Universe?" required></textarea>
+        <button type="submit">Enviar mi eco</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
