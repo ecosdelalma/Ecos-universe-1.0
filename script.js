@@ -1,6 +1,8 @@
-function showForm() {
-  document.getElementById('overlay').classList.add('hidden');
-  setTimeout(() => {
-    document.getElementById('formContainer').classList.remove('hidden');
-  }, 1000);
-}
+
+const beEcosBtn = document.getElementById("be-ecos");
+const formContainer = document.getElementById("form-container");
+
+beEcosBtn.addEventListener("click", () => {
+  beEcosBtn.style.display = "none";
+  formContainer.classList.remove("hidden");
+});
